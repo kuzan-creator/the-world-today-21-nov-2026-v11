@@ -445,17 +445,17 @@ def build():
         d.text((tx, ty), str(n), font=SANS_B(11), fill=RED)
         d.text((tx + 26 * SS, ty), t, font=SANS(11), fill=(50, 48, 44))
     # date check box
-    d.rectangle([MX, 1952, W - MX, 2004], outline=RED, width=2 * SS)
-    d.text((MX + 10 * SS, 1960),
+    d.rectangle([MX, 1952, W - MX, 2010], outline=RED, width=2 * SS)
+    d.text((MX + 10 * SS, 1958),
            "DATE CHECK — Wires read to 04:00 UTC, Saturday 21 November 2026. Every story was reported, or was still",
            font=SANS(11), fill=INK)
-    d.text((MX + 10 * SS, 1982),
+    d.text((MX + 10 * SS, 1984),
            "developing, in the Saturday news cycle. Left out as other days' news: the Anthropic debut and GTA VI launch (19 Nov).",
            font=SANS(11), fill=INK)
     # footer
-    d.text((MX, 2012), "THE WORLD IN ONE DAY", font=SANS_B(11), fill=GREY)
+    d.text((MX, 2018), "THE WORLD IN ONE DAY", font=SANS_B(11), fill=GREY)
     ft = "SATURDAY 21 NOVEMBER 2026 · ONE PAGE"
-    d.text((W - MX - d.textlength(ft, font=SANS_B(11)), 2012), ft,
+    d.text((W - MX - d.textlength(ft, font=SANS_B(11)), 2018), ft,
            font=SANS_B(11), fill=GREY)
     out = img.resize((1024, 1024), Image.LANCZOS)
     grain(out, amp=4)
